@@ -77,8 +77,6 @@ function generateTitleLinks(){
 
 generateTitleLinks();
 
-
-
 function generateTags(){
   /* find all articles */
 
@@ -106,4 +104,4 @@ function generateTags(){
 }
 
 generateTags();
-  }
+}
