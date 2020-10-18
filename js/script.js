@@ -187,8 +187,8 @@ function authorClickHandler(event){
   event.preventDefault();
   const clickedElement = this;
   const activeLinks = document.querySelectorAll('a.active[href^="#tag-"]');
-  const optArticleAuthorSelector
-
+  const optArticleAuthorSelector = '.post-author';
+ 
   /* START LOOP: for each active tag link */
   for(let activeLink of activeLinks){
 
