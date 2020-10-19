@@ -35,7 +35,8 @@ const titleClickHandler = function(event){
 const optArticleSelector = '.post',
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles',
-  optArticleTagsSelector = '.post-tags .list';
+  optArticleTagsSelector = '.post-tags .list',
+  optTagsListSelector = '.tags.list';
 
 function generateTitleLinks(customSelector = ''){
 
@@ -224,7 +225,6 @@ function authorClickHandler(event){
   link.addEventListener('click', titleClickHandler);
   
   /* END LOOP: for each link */
-}
-
+    }
 addClickListenersToAuthors();
 }
