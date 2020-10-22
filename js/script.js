@@ -111,7 +111,7 @@ function generateTags() {
       html = html + linkHTML; 
 
       /* [NEW] check if this link is NOT already in allTags */
-      if(allTags.indexOf(linkHTML) == -1){
+      if (allTags.indexOf(linkHTML) == -1) {
 
         /* [NEW] add generated code to allTags array */
         allTags.push(linkHTML);
