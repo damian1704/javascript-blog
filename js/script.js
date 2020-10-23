@@ -5,7 +5,7 @@ const titleClickHandler = function(event) {
   event.preventDefault();
   const clickedElement = this;
  
-  /* [DONE] remove class 'active' from all article links  */
+  /* [DONE] remove class 'active' from all article links */
   const activeLinks = document.querySelectorAll('.titles a.active');
   
   for (let activeLink of activeLinks) {
@@ -30,12 +30,12 @@ const titleClickHandler = function(event) {
   targetArticle.classList.add('active');
 }
 
-
 const optArticleSelector = '.post',
-  optTitleSelector = '.post-title',
-  optTitleListSelector = '.titles',
-  optArticleTagsSelector = '.post-tags .list',
-  optArticleAuthorsSelector = '.post-author';
+    optTitleSelector = '.post-title',
+    optTitleListSelector = '.titles',
+    optArticleTagsSelector = '.post-tags .list',
+    optArticleAuthorsSelector = '.post-author';
+
 
 function generateTitleLinks(customSelector = '') {
 
