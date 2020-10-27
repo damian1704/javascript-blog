@@ -67,7 +67,7 @@
     
     }
 
-  titleList.innerHTML = html;
+    titleList.innerHTML = html;
 
     const links = document.querySelectorAll('.titles a');
   
@@ -95,8 +95,6 @@
       let html = '';
 
       /* get tags from data-tags attribute */
-      const articleTags = article.getAttribute('.post-tags .list');
-
       /* split tags into array */
       const dataTags = article.getAttribute('data-tags').split(' ');
 
@@ -177,7 +175,7 @@
     /* find all links to tags */
     const tagLinks = document.querySelectorAll('.post-tags a');
     /* START LOOP: for each link */
-    for (let tag of taglinks) {
+    for (let tag of tagLinks) {
     
       /* add tagClickHandler as event listener for that link */
       tag.addEventListener('click', tagClickHandler);
@@ -266,6 +264,14 @@
       author.addEventListener('click', authorClickHandler);
       /* END LOOP: for each link */
     }
+  }
+
+  function titleCase(string) {
+    let sentence = string.toLowerCase().split(' ');
+    for (let i = 0; i < sentence.length; i++) {
+      sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+    }
+    return sentence.join(' ');
   }
 
   addClickListenersToAuthors();
